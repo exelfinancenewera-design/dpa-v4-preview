@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Much House Can I Afford With Down Payment Assistance? | DPA Affordability Calculator</title>
+<meta name="description" content="The only calculator that answers both questions at once: how much house you can afford AND which down payment assistance program could close your gap — with a personalized action plan, instantly, no email required.">
+<link rel="canonical" href="https://dpaestimator.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='8' fill='%2316233f'/%3E%3Cpath d='M24 9 L40 23 H35 V38 H28 V29 H20 V38 H13 V23 H8 Z' fill='%23c9a24f'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DPA Estimator">
+<meta property="og:title" content="How Much House Can I Afford With Down Payment Assistance?">
+<meta property="og:description" content="The only free calculator that answers both questions at once: your real affordability AND which down payment assistance program could close your gap — instant, no email required.">
+<meta property="og:url" content="https://dpaestimator.com/">
+<meta property="og:image" content="https://dpaestimator.com/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Much House Can I Afford With Down Payment Assistance?">
+<meta name="twitter:description" content="Free calculator: your affordability + your state's down payment assistance match + a personalized action plan. No email required.">
+<meta name="twitter:image" content="https://dpaestimator.com/hero.jpg">
+<link rel="preload" as="image" href="hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "DPA Affordability Calculator",
+      "alternateName": "Down Payment Assistance Affordability Calculator",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+      "description": "Estimates home affordability using FHA 31/43 debt-to-income guidelines, matches you to verified state down payment assistance programs, and generates a personalized action plan."
+    },
+    {
+      "@type": "Organization",
+      "name": "DPA Estimator",
+      "description": "Independent home-affordability and down payment assistance education tool. Not a lender.",
+      "url": "https://dpaestimator.com/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dpaestimator.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Down Payment Assistance Calculator", "item": "https://dpaestimator.com/"}
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to check your down payment assistance eligibility",
+      "step": [
+        {"@type": "HowToStep", "name": "Enter your finances", "text": "Enter your state, annual household income, monthly debts, savings, target price, credit range, and current rent."},
+        {"@type": "HowToStep", "name": "Review your estimate", "text": "See the price you likely qualify for, your full PITI payment, DTI risk flags, and your down payment gap."},
+        {"@type": "HowToStep", "name": "See your program match", "text": "The calculator matches your state's verified down payment assistance program and shows how much of your gap it could cover."},
+        {"@type": "HowToStep", "name": "Follow your action plan", "text": "Get a personalized step-by-step plan and download it as a PDF report."}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What is down payment assistance and how does it work?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Down payment assistance (DPA) is money — a grant, forgivable loan, or low-interest second loan — that helps cover your down payment and/or closing costs. As of Q1 2026 there are 2,679 such programs nationwide (source: Down Payment Resource's quarterly program count), run by state housing finance agencies, cities, counties, and some employers."}},
+        {"@type": "Question", "name": "How much down payment assistance can I get?",
+         "acceptedAnswer": {"@type": "Answer", "text": "It varies by state and program — from a few thousand dollars up to $100,000 in some city-specific programs. Most state programs fall in the $7,500-$15,000 range or 3-5% of the loan amount."}},
+        {"@type": "Question", "name": "Do I have to be a first-time homebuyer to qualify for down payment assistance?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Not always. Many programs are for first-time buyers, but a large share are open to repeat buyers who haven't owned a home in the past three years, or to specific groups like veterans or teachers."}},
+        {"@type": "Question", "name": "What credit score do I need for down payment assistance?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Many state programs set a 620 minimum credit score paired with area median income limits, though requirements are set individually by each agency."}},
+        {"@type": "Question", "name": "Is down payment assistance free money or a loan I have to repay?",
+         "acceptedAnswer": {"@type": "Answer", "text": "It depends on the program — some are outright grants, many are deferred forgivable second loans, and others are low- or zero-interest loans repaid on sale or refinance."}},
+        {"@type": "Question", "name": "Can I combine down payment assistance with an FHA, VA, or USDA loan?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Usually yes. FHA loans require 3.5% down and VA/USDA loans allow 0% down; down payment assistance can often cover part or all of that plus closing costs, subject to lender and program rules."}}
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "How to Use the DPA Affordability Calculator — Walkthrough",
+      "description": "A step-by-step walkthrough of the DPA Affordability Calculator: what each input means, how to read your decision report, and how to act on your personalized down payment assistance plan.",
+      "thumbnailUrl": "https://dpaestimator.com/video-poster.jpg",
+      "contentUrl": "https://dpaestimator.com/walkthrough-video-ui.mp4",
+      "uploadDate": "2026-07-05",
+      "duration": "PT4M30S"
+    }
+  ]
+}
+</script>
+
+<style>
+  /* ============================================================================
+     NICHE-CALC FLAGSHIP TEMPLATE (v4) — image-led · navy/gold · twin-card
+     WHITE-LABEL / REPLICATION: reskin any niche calculator by editing ONLY
+       1. this :root token block (colors, fonts)
+       2. the CONFIG block at the top of <script> (endpoints, IDs, variant)
+       3. the STATE_PROGRAMS data block (niche dataset)
+       4. hero.jpg + copy slots (h1, standfirst, offer)
+     Everything else — engine, SEO scaffold, funnel wiring — carries over.
+     ============================================================================ */
+  :root{
+    --navy:#16233f; --navy-deep:#0b1428; --navy-2:#101b31; --navy-3:#22345c;
+    --gold:#a9822f; --gold-2:#c9a24f;
+    --cloud:#f7f5f0;         /* light band canvas */
+    --card:#ffffff;
+    --ink:#1a1d24; --ink-soft:#57606f; --ink-faint:#8a8f9c;
+    --line:#e6e2d8; --line-2:#d8d2c2;
+    --on-dark:#e7ebf5; --on-dark-soft:#aab3c9;
+    --green:#2f6b4f; --green-bg:#e8f0ea; --green-dk:#9fe2bf;
+    --red:#a33d3d;   --red-bg:#f5e6e4;   --red-dk:#f0a0a0;
+    --amber:#8a5e12; --amber-bg:#f4ecd8; --amber-dk:#f0c46c;
+    --serif:'Fraunces',Georgia,'Times New Roman',serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+    --maxw:1180px; --r:14px; --r-sm:9px;
+    --shadow:0 2px 6px rgba(11,20,40,.07), 0 30px 60px -30px rgba(11,20,40,.35);
+    --shadow-dk:0 2px 8px rgba(0,0,0,.25), 0 30px 70px -25px rgba(0,0,0,.55);
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+  body{ margin:0; background:var(--cloud); color:var(--ink); font-family:var(--sans); line-height:1.55; font-size:16px; -webkit-font-smoothing:antialiased; }
+  img,iframe,video{ max-width:100%; }
+  a{ color:var(--navy); text-underline-offset:2px; }
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 24px; }
+  @media (max-width:560px){ .wrap{ padding:0 16px; } }
+  h1,h2,h3{ font-family:var(--serif); font-weight:600; letter-spacing:-.01em; }
+
+  /* ---- Glass nav ---- */
+  header.nav{ position:fixed; top:0; left:0; right:0; z-index:60;
+    background:rgba(11,20,40,.72); backdrop-filter:blur(12px) saturate(1.2); -webkit-backdrop-filter:blur(12px) saturate(1.2);
+    border-bottom:1px solid rgba(201,162,79,.22); }
+  header.nav .wrap{ display:flex; align-items:center; justify-content:space-between; gap:14px; padding-top:13px; padding-bottom:13px; }
+  .brand{ font-family:var(--serif); font-weight:700; font-size:21px; color:#fff; letter-spacing:.2px; text-decoration:none; }
+  .brand em{ color:var(--gold-2); font-style:normal; }
+  nav.links{ display:flex; align-items:center; gap:24px; font-size:13.5px; font-weight:600; }
+  nav.links a{ color:#cdd5e6; text-decoration:none; }
+  nav.links a:hover{ color:#fff; }
+  nav.links a.navcta{ background:var(--gold); color:#fff; padding:9px 16px; border-radius:8px; }
+  nav.links a.navcta:hover{ background:var(--gold-2); }
+  @media (max-width:860px){ nav.links a:not(.navcta){ display:none; } }
+
+  /* ---- Cinematic hero (image-led — the photo does the talking) ---- */
+  .hero{ position:relative; min-height:88vh; display:flex; flex-direction:column; justify-content:center;
+    background:
+      linear-gradient(115deg, rgba(8,14,29,.92) 0%, rgba(11,20,40,.78) 38%, rgba(11,20,40,.25) 75%, rgba(11,20,40,.45) 100%),
+      url('hero.jpg') center 40% / cover no-repeat;
+    color:#fff; padding:120px 0 96px; }
+  .hero h1{ font-size:clamp(36px,5.6vw,66px); line-height:1.03; margin:0 0 18px; max-width:15ch; color:#fff;
+    text-shadow:0 2px 30px rgba(0,0,0,.5); }
+  .hero h1 em{ color:var(--gold-2); font-style:italic; }
+  .hero .standfirst{ font-size:clamp(16px,1.6vw,19px); color:#dfe5f2; max-width:46ch; margin:0 0 30px; text-shadow:0 1px 14px rgba(0,0,0,.55); }
+  .hero .cta-row{ display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+  .trust-pills{ display:flex; gap:10px; flex-wrap:wrap; margin-top:28px; }
+  .trust-pills span{ font-size:12.5px; font-weight:600; color:#e4e9f5; padding:8px 14px; border-radius:100px;
+    background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.18); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); }
+
+  /* Sourced stat strip — glass cards riding the hero's bottom edge */
+  .stat-strip{ position:relative; z-index:5; margin-top:-58px; }
+  .stat-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  @media (max-width:820px){ .stat-grid{ grid-template-columns:1fr; } }
+  .stat{ background:rgba(16,27,49,.88); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    border:1px solid rgba(201,162,79,.3); border-radius:var(--r); padding:20px 24px; color:#fff; box-shadow:var(--shadow-dk); }
+  .stat .n{ font-family:var(--serif); font-size:30px; font-weight:700; color:var(--gold-2); line-height:1.1; }
+  .stat .l{ font-size:12.5px; color:var(--on-dark-soft); margin-top:4px; line-height:1.45; }
+
+  /* Citable AEO answer — one sentence, quiet bar */
+  .answer-bar{ padding:34px 0 0; }
+  .answer-bar p{ margin:0; max-width:86ch; font-size:14.5px; line-height:1.7; color:var(--ink-soft);
+    border-left:3px solid var(--gold-2); padding-left:16px; }
+  .answer-bar b{ color:var(--navy); }
+
+  /* ---- Buttons ---- */
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; background:var(--gold); color:#fff;
+    border:none; padding:15px 28px; font-size:15px; font-weight:700; font-family:var(--sans); border-radius:10px;
+    cursor:pointer; min-height:50px; text-decoration:none; transition:transform .12s ease, background .12s ease, box-shadow .12s ease;
+    box-shadow:0 12px 30px -12px rgba(169,130,47,.8); }
+  .btn:hover{ background:var(--gold-2); transform:translateY(-1px); }
+  .btn.ghost{ background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.4); color:#fff; box-shadow:none; backdrop-filter:blur(6px); }
+  .btn.ghost:hover{ background:rgba(255,255,255,.16); }
+  .btn.ghost.dark{ background:transparent; border:1.5px solid var(--navy); color:var(--navy); }
+  .btn.ghost.dark:hover{ background:var(--navy); color:#fff; }
+  .btn.small{ padding:11px 18px; min-height:44px; font-size:14px; }
+
+  /* ---- Section chrome ---- */
+  section.section{ padding:72px 0; }
+  .kicker{ font-size:12px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); margin:0 0 10px; }
+  section.section h2{ font-size:clamp(26px,3.2vw,40px); line-height:1.08; margin:0 0 10px; color:var(--navy); }
+  .section-lead{ color:var(--ink-soft); max-width:60ch; margin:0 0 34px; font-size:16px; }
+  .dark-band{ background:linear-gradient(160deg,var(--navy-deep) 0%,var(--navy) 100%); color:#fff; }
+  section.section.dark-band h2, .dark-band h2{ color:#fff; }
+  .dark-band .kicker{ color:var(--gold-2); }
+  .dark-band .section-lead{ color:var(--on-dark-soft); }
+
+  /* ---- Calculator — TWIN BALANCED CARDS (standalone, equal height) ---- */
+  .calc-band{ padding:64px 0 72px; }
+  .calc-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:stretch; }
+  @media (max-width:920px){ .calc-grid{ grid-template-columns:1fr; } }
+  .calc-card{ border-radius:var(--r); padding:30px 32px; display:flex; flex-direction:column; }
+  @media (max-width:560px){ .calc-card{ padding:22px 18px; } }
+  .calc-card.inputs{ background:var(--card); border:1px solid var(--line-2); box-shadow:var(--shadow); }
+  .calc-card.results{ background:linear-gradient(165deg,var(--navy-2) 0%,#0d1730 100%); color:#fff;
+    border:1px solid rgba(201,162,79,.35); box-shadow:var(--shadow-dk); }
+  .card-head{ display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:4px; }
+  .card-title{ font-family:var(--serif); font-size:20px; font-weight:600; margin:0; }
+  .calc-card.inputs .card-title{ color:var(--navy); }
+  .calc-card.results .card-title{ color:#fff; }
+  .card-note{ font-size:12px; color:var(--ink-faint); margin:0 0 24px; }
+  .calc-card.results .card-note{ color:var(--on-dark-soft); }
+
+  .field{ margin-bottom:21px; }
+  .field label{ display:block; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--ink-faint); margin-bottom:8px; }
+  .field input[type=number], .field select{
+    width:100%; padding:14px; font-size:16px; min-height:52px; font-family:var(--sans); color:var(--ink);
+    border:1px solid var(--line-2); border-radius:var(--r-sm); background:#fff; transition:border-color .12s, box-shadow .12s; }
+  .field input[type=number]:focus, .field select:focus{ outline:none; border-color:var(--gold); box-shadow:0 0 0 3px rgba(169,130,47,.2); }
+  .field input[type=range]{ width:100%; accent-color:var(--gold); min-height:48px; }
+  .field .hint{ font-size:11.5px; color:var(--ink-faint); margin-top:5px; }
+  .row2{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:560px){ .row2{ grid-template-columns:1fr; } }
+
+  .sticky-calc{ position:fixed; left:0; right:0; bottom:0; z-index:50; display:none;
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom)); background:rgba(11,20,40,.97); border-top:1px solid var(--navy-3); }
+  .sticky-calc .btn{ width:100%; }
+  @media (max-width:920px){ .sticky-calc{ display:block; } body{ padding-bottom:78px; } }
+
+  /* Results internals */
+  .chip{ font-size:11.5px; font-weight:700; padding:5px 11px; border-radius:100px; }
+  .chip.ok{ background:rgba(47,107,79,.35); color:var(--green-dk); }
+  .chip.warn{ background:rgba(162,112,29,.35); color:var(--amber-dk); }
+  .chip.risk{ background:rgba(163,61,61,.35); color:var(--red-dk); }
+  .result-label{ font-size:11px; text-transform:uppercase; letter-spacing:.14em; color:var(--on-dark-soft); font-weight:700; }
+  .result-figure{ font-family:var(--serif); font-size:44px; font-weight:700; color:var(--gold-2); line-height:1.05; margin:2px 0 0; }
+  .verdict{ margin-top:14px; padding:13px 15px; border-radius:var(--r-sm); font-size:14px; line-height:1.55;
+    background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.15); color:var(--on-dark); }
+  .verdict b{ color:#fff; }
+  .chips{ display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+  .breakdown{ margin:14px 0 0; border-top:1px solid rgba(255,255,255,.14); padding-top:10px; font-variant-numeric:tabular-nums; }
+  .breakdown .line{ display:flex; justify-content:space-between; gap:12px; font-size:13.5px; padding:5px 0; color:var(--on-dark-soft); }
+  .breakdown .line b{ color:#fff; font-weight:700; }
+  .gap-box{ margin-top:12px; padding:12px 14px; border-radius:var(--r-sm); background:rgba(201,162,79,.13); border:1px solid rgba(201,162,79,.35); }
+  .gap-box div:last-child{ margin-top:5px; font-size:13.5px; color:var(--on-dark); }
+  .status-ok{ color:var(--green-dk); font-weight:700; }
+  .status-gap{ color:var(--amber-dk); font-weight:700; }
+  .status-risk{ color:var(--red-dk); font-weight:700; }
+  .report-actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
+
+  .capture-box{ margin-top:16px; padding:16px; border-radius:var(--r-sm); background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.16); }
+  .capture-box label{ font-size:12px; color:#cfd6e6; display:block; margin-bottom:7px; font-weight:600; }
+  .capture-row{ display:flex; gap:8px; }
+  @media (max-width:480px){ .capture-row{ flex-direction:column; } }
+  .capture-row input[type=email]{ flex:1; padding:12px; border-radius:var(--r-sm); border:1px solid #3a4a70; background:var(--navy); color:#fff; font-size:15px; min-height:46px; }
+  .capture-row input[type=email]::placeholder{ color:#8b93a8; }
+  .capture-row button{ background:var(--gold); color:#fff; border:none; padding:0 18px; border-radius:var(--r-sm); font-weight:700; cursor:pointer; font-size:13.5px; min-height:46px; }
+  .capture-fine{ font-size:10.5px; color:#8b93a8; margin-top:6px; }
+  .affiliate-box{ margin-top:12px; padding:13px 15px; border-radius:var(--r-sm); background:rgba(255,255,255,.05); border:1px dashed rgba(255,255,255,.25); font-size:13px; color:#cfd6e6; }
+  .affiliate-box a{ color:var(--gold-2); font-weight:700; }
+  .affiliate-fine{ font-size:10.5px; color:#8b93a8; margin-top:5px; }
+  .affiliate-fine a{ color:#8b93a8; }
+
+  /* ---- Offer ---- */
+  .tripwire-card{ padding:34px 36px; border-radius:var(--r); background:linear-gradient(140deg,var(--navy-deep) 0%,var(--navy-3) 100%);
+    color:#fff; display:grid; grid-template-columns:1fr auto; gap:26px; align-items:center;
+    border:1px solid rgba(201,162,79,.3); box-shadow:var(--shadow-dk); }
+  @media (max-width:720px){ .tripwire-card{ grid-template-columns:1fr; padding:26px 22px; } }
+  .tripwire-card .txt h3{ font-family:var(--serif); margin:0 0 10px; font-size:clamp(20px,2.4vw,27px); color:#fff; }
+  .tripwire-card .txt p{ margin:0; color:#d6dcea; font-size:14.5px; max-width:56ch; line-height:1.6; }
+  .tripwire-card .txt p b{ color:#fff; }
+  .tripwire-card .price{ font-size:13px; color:var(--gold-2); font-weight:700; margin-top:12px; }
+  .tripwire-card a.btn{ white-space:nowrap; }
+  .tripwire-card .upsell{ margin-top:12px; font-size:13px; color:#cfd6e6; border-top:1px solid rgba(255,255,255,.14); padding-top:12px; }
+  .tripwire-card .upsell a{ color:var(--gold-2); font-weight:700; text-decoration:none; }
+  .tripwire-card .upsell a:hover{ text-decoration:underline; }
+
+  /* ---- Action plan ---- */
+  .plan-list{ counter-reset:step; list-style:none; padding:0; margin:0; display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  @media (max-width:820px){ .plan-list{ grid-template-columns:1fr; } }
+  .plan-list li{ position:relative; padding:16px 18px 16px 58px; background:var(--card);
+    border:1px solid var(--line-2); border-radius:var(--r-sm); font-size:14px; line-height:1.55; box-shadow:0 1px 3px rgba(11,20,40,.06); }
+  .plan-list li::before{ counter-increment:step; content:counter(step); position:absolute; left:16px; top:14px;
+    width:28px; height:28px; border-radius:50%; background:var(--navy); color:var(--gold-2);
+    font-weight:800; display:flex; align-items:center; justify-content:center; font-size:13px; }
+  .plan-list li b{ color:var(--navy); }
+  .plan-list li a{ color:var(--gold); font-weight:600; }
+
+  /* ---- Video (dark cinematic band) ---- */
+  .video-layout{ display:grid; grid-template-columns:1.55fr 1fr; gap:28px; align-items:start; }
+  @media (max-width:900px){ .video-layout{ grid-template-columns:1fr; } }
+  .video-shell{ position:relative; padding-top:56.25%; border-radius:var(--r); overflow:hidden; background:#000;
+    border:1px solid rgba(201,162,79,.3); box-shadow:var(--shadow-dk); }
+  .video-shell iframe, .video-shell video{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .video-placeholder{ position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#8b93a8; font-size:14px; gap:8px; }
+  .chapters{ list-style:none; margin:0; padding:0; }
+  .chapters li{ border-bottom:1px solid rgba(255,255,255,.12); }
+  .chapters button{ width:100%; display:flex; gap:14px; align-items:baseline; text-align:left; background:none; border:none;
+    padding:12px 4px; cursor:pointer; font-family:var(--sans); font-size:14px; color:var(--on-dark); transition:color .12s; }
+  .chapters button:hover{ color:var(--gold-2); }
+  .chapters .t{ font-family:var(--serif); font-weight:700; font-style:italic; color:var(--gold-2); font-size:13.5px; min-width:42px; }
+  .chapters .c{ font-weight:600; }
+  .video-side h3{ font-size:15px; margin:0 0 8px; color:#fff; }
+  details.fold{ border:1px solid rgba(255,255,255,.16); border-radius:var(--r-sm); margin-top:16px; background:rgba(255,255,255,.05); }
+  details.fold summary{ cursor:pointer; font-weight:700; font-size:13.5px; color:#fff; padding:12px 16px; list-style:none; }
+  details.fold summary::-webkit-details-marker{ display:none; }
+  details.fold summary::after{ content:'+'; float:right; color:var(--gold-2); font-weight:800; }
+  details.fold[open] summary::after{ content:'–'; }
+  details.fold p, details.fold ul{ color:var(--on-dark-soft); font-size:13.5px; margin:0; padding:0 16px 14px; line-height:1.65; }
+  details.fold ul{ padding-left:32px; }
+  details.fold li{ margin-bottom:6px; }
+  details.fold b{ color:#fff; }
+
+  /* ---- Programs ---- */
+  .program-card{ padding:26px 28px; background:var(--card); border:1px solid var(--line-2); border-radius:var(--r); box-shadow:var(--shadow); }
+  .program-card .name{ font-family:var(--serif); font-weight:600; font-size:20px; color:var(--navy); }
+  .program-card .meta{ font-size:12px; color:var(--ink-faint); margin:5px 0 8px; text-transform:uppercase; letter-spacing:.08em; font-weight:700; }
+  .program-card .amt{ color:var(--green); font-weight:700; font-size:15px; }
+  .program-card a{ color:var(--gold); font-weight:600; }
+
+  /* ---- Accordions (light bands: FAQ + methodology) ---- */
+  details.acc{ background:var(--card); border:1px solid var(--line-2); border-radius:var(--r-sm); margin-bottom:10px; box-shadow:0 1px 3px rgba(11,20,40,.05); }
+  details.acc summary{ cursor:pointer; font-weight:700; font-size:15px; color:var(--navy); padding:16px 20px; list-style:none; font-family:var(--sans); }
+  details.acc summary::-webkit-details-marker{ display:none; }
+  details.acc summary::after{ content:'+'; float:right; color:var(--gold); font-weight:800; font-size:17px; }
+  details.acc[open] summary::after{ content:'–'; }
+  details.acc p, details.acc ol{ margin:0; padding:0 20px 16px; color:var(--ink-soft); font-size:14.5px; line-height:1.65; }
+  details.acc ol{ padding-left:38px; }
+  details.acc li{ margin-bottom:9px; }
+  details.acc b{ color:var(--navy); }
+
+  /* ---- Ad slots (labeled, design-matched) ---- */
+  .ad{ margin:0 auto; padding:14px; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    background:#f0ede4; border:1px solid var(--line); border-radius:var(--r-sm); }
+  .ad .ad-label{ font-size:10px; font-weight:700; letter-spacing:.24em; text-transform:uppercase; color:var(--ink-faint); margin-bottom:8px; }
+  .ad .ad-body{ color:#a8a294; font-size:12px; display:flex; align-items:center; justify-content:center; width:100%; }
+  .ad.leaderboard{ min-height:104px; max-width:970px; }
+  .ad.in-content{ min-height:100px; max-width:760px; }
+  .ad.native{ min-height:126px; }
+
+  /* ---- Disclosure + engineered footer ---- */
+  .disclosure{ background:#efece3; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-soft); padding:22px 0; line-height:1.6; }
+  footer{ background:var(--navy-deep); color:#aeb7cf; padding:52px 0 30px; font-size:13.5px; }
+  .foot-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:34px; padding-bottom:30px; border-bottom:1px solid rgba(255,255,255,.1); }
+  @media (max-width:720px){ .foot-grid{ grid-template-columns:1fr; } }
+  footer .brand{ font-size:22px; }
+  footer .tag{ margin-top:10px; font-size:13px; color:#8b93a8; max-width:34ch; line-height:1.6; }
+  footer h4{ font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-2); margin:0 0 12px; font-family:var(--sans); }
+  footer ul{ list-style:none; margin:0; padding:0; }
+  footer li{ margin-bottom:9px; }
+  footer a{ color:#cdd5e6; text-decoration:none; }
+  footer a:hover{ color:#fff; }
+  .foot-base{ padding-top:20px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; font-size:12px; color:#8b93a8; }
+
+  /* ---- PDF report (print) ---- */
+  #printReport{ display:none; }
+  @media print{
+    body *{ visibility:hidden; }
+    #printReport, #printReport *{ visibility:visible; }
+    #printReport{ display:block; position:absolute; left:0; top:0; width:100%; padding:24px; background:#fff; color:#1c1f26; font-size:13px; }
+    #printReport h1{ font-family:var(--serif); font-size:22px; margin:0 0 2px; color:#16233f; }
+    #printReport h2{ font-size:15px; margin:18px 0 6px; color:#16233f; border-bottom:1px solid #ccc; padding-bottom:3px; }
+    #printReport table{ width:100%; border-collapse:collapse; }
+    #printReport td{ padding:4px 6px; border-bottom:1px solid #eee; }
+    #printReport ol{ padding-left:18px; }
+    #printReport .fine{ font-size:10px; color:#666; margin-top:16px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">DPA<em>·</em>Estimator</a>
+    <nav class="links">
+      <a href="#calc">Calculator</a>
+      <a href="#plan">Action Plan</a>
+      <a href="#video">Walkthrough</a>
+      <a href="#faq">FAQ</a>
+      <a class="navcta" href="#calc">Get my number</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <h1>How much house can you afford <em>with</em> down payment assistance?</h1>
+    <p class="standfirst">Your real affordability, your state's assistance match, and your action plan — in 30 seconds. No email required.</p>
+    <div class="cta-row">
+      <a class="btn" href="#calc" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'});return false;">See what you qualify for — free &darr;</a>
+      <a class="btn ghost" href="#video">&#9654;&#65039; Watch the walkthrough</a>
+    </div>
+    <div class="trust-pills">
+      <span>&#128274; Instant, on this page — no account</span>
+      <span>&#128196; Programs linked to official state agencies</span>
+      <span>&#9878; Estimates only — not a loan offer</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap stat-strip">
+  <div class="stat-grid">
+    <div class="stat"><div class="n">2,679</div><div class="l">assistance programs nationwide, 77% active &amp; funded — Down Payment Resource, Q1 2026</div></div>
+    <div class="stat"><div class="n">31 / 43</div><div class="l">FHA debt-to-income guidelines — the same math a lender applies to your file</div></div>
+    <div class="stat"><div class="n">11 states</div><div class="l">verified program dataset, every program linked to its official agency page</div></div>
+  </div>
+  <div class="answer-bar" id="answer">
+    <p><b>The short answer:</b> you can typically afford a home where the total monthly payment stays under 31% of your gross income (and under 43% with your other debts) — and as of Q1 2026 there are <b>2,679 down payment assistance programs</b> in the US, 77% of them active and funded (source: Down Payment Resource), that can cover part or all of the 3% minimum down payment. This calculator computes both in one step.</p>
+  </div>
+</div>
+
+<div class="wrap calc-band" id="calc">
+  <p class="kicker">The Calculator</p>
+  <h2 style="font-family:var(--serif); font-size:clamp(26px,3.2vw,40px); color:var(--navy); margin:0 0 30px;">Two answers. One calculation.</h2>
+  <div class="calc-grid">
+    <div class="calc-card inputs">
+      <div class="card-head"><h3 class="card-title">Your numbers</h3></div>
+      <p class="card-note">Private — nothing is stored or sent.</p>
+      <div class="row2">
+        <div class="field">
+          <label for="state">State</label>
+          <select id="state"></select>
+        </div>
+        <div class="field">
+          <label for="credit">Credit score range</label>
+          <select id="credit">
+            <option value="760">760+ (excellent)</option>
+            <option value="700" selected>700–759 (good)</option>
+            <option value="640">640–699 (fair)</option>
+            <option value="600">580–639 (building)</option>
+            <option value="550">Below 580</option>
+          </select>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label for="income">Annual household income ($)</label>
+          <input type="number" id="income" value="85000" min="0" step="1000" inputmode="numeric">
+        </div>
+        <div class="field">
+          <label for="debts">Monthly debt payments ($)</label>
+          <input type="number" id="debts" value="350" min="0" step="10" inputmode="numeric">
+          <div class="hint">Car, student loans, cards — not rent</div>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label for="price">Target home price ($)</label>
+          <input type="number" id="price" value="350000" min="0" step="5000" inputmode="numeric">
+        </div>
+        <div class="field">
+          <label for="savings">Cash saved ($)</label>
+          <input type="number" id="savings" value="6000" min="0" step="500" inputmode="numeric">
+        </div>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label for="rent">Current monthly rent ($)</label>
+          <input type="number" id="rent" value="1600" min="0" step="50" inputmode="numeric">
+          <div class="hint">Used for payment-shock check</div>
+        </div>
+        <div class="field">
+          <label for="monthlySave">You can save per month ($)</label>
+          <input type="number" id="monthlySave" value="400" min="0" step="50" inputmode="numeric">
+          <div class="hint">Used for time-to-goal estimate</div>
+        </div>
+      </div>
+      <div class="field">
+        <label for="rate">Assumed interest rate (%) — Freddie Mac PMMS benchmark</label>
+        <input type="range" id="rate" min="4" max="9" step="0.125" value="6.5">
+        <div class="hint"><span id="rateVal">6.5</span>% &nbsp;|&nbsp; adjust to match current quotes</div>
+      </div>
+      <div style="margin-top:auto; padding-top:8px;">
+        <button class="btn" id="calcBtn" style="width:100%;">Calculate my affordability &amp; match</button>
+      </div>
+    </div>
+
+    <div class="calc-card results" id="resultsPanel">
+      <div class="card-head">
+        <h3 class="card-title">Your decision report</h3>
+        <span class="chip warn" id="stateBadge">CALIFORNIA</span>
+      </div>
+      <p class="card-note">FHA 31/43 DTI guidelines · 3% minimum down, before assistance.</p>
+
+      <div class="result-label">Estimated home price you likely qualify for</div>
+      <div class="result-figure" id="maxPrice">$0</div>
+
+      <div class="verdict" id="verdictText"></div>
+      <div class="chips" id="riskChips"></div>
+
+      <div class="breakdown">
+        <div class="line"><span>Principal &amp; interest</span><b id="outPI">$0</b></div>
+        <div class="line"><span>Est. property tax (1.1%)</span><b id="outTax">$0</b></div>
+        <div class="line"><span>Est. homeowners insurance</span><b id="outIns">$0</b></div>
+        <div class="line"><span>Est. total monthly payment (PITI)</span><b id="outTotal">$0</b></div>
+        <div class="line"><span>vs. your current rent</span><b id="outShock">—</b></div>
+      </div>
+
+      <div class="gap-box">
+        <div class="result-label">Down payment gap &amp; time to close it</div>
+        <div id="gapText"></div>
+      </div>
+      <div class="gap-box" style="margin-top:10px;">
+        <div class="result-label">Matched assistance program</div>
+        <div id="matchText"></div>
+      </div>
+      <div class="gap-box" style="margin-top:10px;">
+        <div class="result-label">Qualification signals</div>
+        <div id="qualText"></div>
+      </div>
+
+      <div class="report-actions">
+        <button class="btn small" id="pdfBtn">Download PDF report</button>
+        <button class="btn ghost small" id="planBtn" style="border-color:rgba(255,255,255,.4);">My action plan &darr;</button>
+      </div>
+
+      <div class="capture-box">
+        <form id="captureForm">
+          <label for="emailCapture">Email me this report + the free Fee-Buster Checklist (PDF)</label>
+          <div class="capture-row">
+            <input type="email" id="emailCapture" placeholder="you@email.com" required>
+            <button type="submit" id="captureBtn">Send it</button>
+          </div>
+          <div class="capture-fine">No spam. One-time delivery + a short follow-up series. Unsubscribe anytime.</div>
+        </form>
+      </div>
+
+      <div class="affiliate-box" id="affiliateBox">
+        Ready for real quotes? <a href="#" id="affiliateLink" rel="sponsored noopener" target="_blank">Compare offers from licensed lenders in your state &rarr;</a>
+        <div class="affiliate-fine">Advertising disclosure: we may earn a fee if you use this link. Lenders shown are not ranked by fees paid — see our <a href="#disclosure">disclosure</a>.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sticky-calc"><button class="btn" id="calcBtnSticky">Calculate my affordability &amp; match</button></div>
+
+<!-- ═══ AD SLOT 1 · post-result, native-styled ═══ -->
+<div class="wrap" style="padding:6px 24px 40px;">
+  <div class="ad native" data-ad-slot="post-result">
+    <span class="ad-label">Advertisement</span>
+    <div class="ad-body"><!-- AdSense responsive display unit --> Sponsored — responsive unit</div>
+  </div>
+</div>
+
+<section class="section dark-band" style="padding:64px 0;">
+  <div class="wrap">
+    <div class="tripwire-card" id="offer" style="border:none; box-shadow:none; background:none; padding:0;">
+      <div class="txt">
+        <p class="kicker">Before you call a lender</p>
+        <h3>The fees they're counting on you not to question.</h3>
+        <p>Your closing sheet will carry roughly seven negotiable fees — usually <b>$3,000+</b> stacked on top of what you just calculated. <b>The Quick-Start Rate &amp; Fee Playbook</b> hands you the 6-question lender script, all 7 fees by name, and the word-for-word phrases that get them reduced or waived.</p>
+        <div class="price">$27 · instant PDF · if it doesn't save you at least $3,000 at closing, email us — full refund</div>
+        <div class="upsell" id="upsellNote">Buying in the next 6–12 months? The Playbook is step one of <a href="#" id="upsellLink" rel="noopener">The Complete Coaching System — the full path, $97 &rarr;</a></div>
+      </div>
+      <a class="btn" href="#" id="tripwireLink" rel="noopener">Arm me before I call — $27 &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="plan">
+  <div class="wrap">
+    <p class="kicker">Your Personalized Action Plan</p>
+    <h2>The exact moves, in order, for your numbers</h2>
+    <p class="section-lead">Generated from your inputs above — recalculate any time and the plan updates instantly.</p>
+    <ol class="plan-list" id="planList"></ol>
+    <div class="tripwire-card" style="margin-top:26px;">
+      <div class="txt">
+        <h3>The plan is free. Executing it cheaply is the skill.</h3>
+        <p>What happens <em>at</em> the closing table decides whether you keep your assistance money — or quietly hand it back in fees. The Homebuyer's Edge is the script for that room.</p>
+        <div class="price">$27 · downloads in 60 seconds · $3,000+ savings promise or your money back</div>
+      </div>
+      <a class="btn" href="#offer" onclick="document.getElementById('tripwireLink').focus();">Get the Edge &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="section dark-band" id="video">
+  <div class="wrap">
+    <p class="kicker">Watch The Walkthrough</p>
+    <h2>How to use this calculator, start to finish</h2>
+    <p class="section-lead">What each input means, how to read your report, and what to do with your plan. Jump to any chapter.</p>
+    <div class="video-layout">
+      <div class="video-main">
+        <div class="video-shell" id="videoShell">
+          <div class="video-placeholder" id="videoPlaceholder">
+            <span>&#9654;&#65039; Walkthrough video</span>
+            <span style="font-size:12px;">Set CONFIG.videoEmbedUrl in the script block to activate</span>
+          </div>
+        </div>
+        <details class="fold">
+          <summary>What this walkthrough covers</summary>
+          <p>The walkthrough demonstrates the calculator end to end with a real example: entering your state, income, debts, savings, target price, rent and savings rate; how the FHA 31/43 debt-to-income guidelines produce the price you likely qualify for; reading the payment breakdown (P&amp;I, tax, insurance, total PITI) and the payment-shock check against your rent; how the risk chips flag DTI, payment shock and thin reserves; how your down payment gap, time-to-goal and state program match are calculated; and how to download or email your personalized report and action plan. <em>Narration uses an AI voice.</em></p>
+        </details>
+      </div>
+      <div class="video-side">
+        <h3>Chapters</h3>
+        <ol class="chapters">
+          <li><button data-t="0"><span class="t">0:00</span><span class="c">What this tool does differently</span></button></li>
+          <li><button data-t="50"><span class="t">0:50</span><span class="c">Entering your numbers</span></button></li>
+          <li><button data-t="120"><span class="t">2:00</span><span class="c">Reading your decision report</span></button></li>
+          <li><button data-t="190"><span class="t">3:10</span><span class="c">Your program match &amp; gap</span></button></li>
+          <li><button data-t="240"><span class="t">4:00</span><span class="c">Acting on your plan</span></button></li>
+        </ol>
+        <details class="fold">
+          <summary>Key takeaways</summary>
+          <ul>
+            <li>Affordability is capped by the <b>lower</b> of the 31% and 43% DTI limits — clearing debt often adds more capacity than raising income.</li>
+            <li>Lenders qualify you on full <b>PITI</b> — tax and insurance are already in this estimate.</li>
+            <li>A down payment gap isn't a wall: matched assistance + your monthly savings rate gives you a real timeline.</li>
+            <li>Every program links to its official state agency — verify current terms there before applying.</li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="kicker">Assistance In Your State</p>
+    <h2>Down payment assistance in <span id="stateNameHeading">your state</span></h2>
+    <p class="section-lead">Every program links directly to the official state housing finance agency — not a lead-gen page.</p>
+    <div id="programList"></div>
+
+    <div style="margin-top:44px;" id="methodology">
+      <details class="acc">
+        <summary>How we calculate this — full methodology</summary>
+        <ol>
+          <li><b>Affordability:</b> total monthly housing payment (PITI) is capped at 31% of gross monthly income — the standard FHA front-end guideline — and PITI plus existing debts must stay under the 43% back-end ratio. The lower of the two limits is used.</li>
+          <li><b>Loan amount:</b> we solve the standard 30-year mortgage amortization formula for the loan size supported by that monthly principal &amp; interest budget, at the rate you set.</li>
+          <li><b>Property tax &amp; insurance:</b> estimated at 1.1% and 0.35% of home price annually — national averages. Your county's actual rate may differ.</li>
+          <li><b>Risk flags:</b> payment shock compares estimated PITI to your current rent (a jump above ~1.5x is flagged); the reserve check flags if buying would leave you with less than 2 months of PITI in savings after closing.</li>
+          <li><b>Down payment gap:</b> minimum down payment modeled at 3% (typical conventional minimum paired with DPA). Time-to-goal divides the remaining gap by your monthly savings rate.</li>
+          <li><b>Qualification signals:</b> your credit range is compared against the 620 floor common to state DPA programs and the 580 FHA threshold. Signals are educational, not an eligibility determination.</li>
+          <li><b>Program match:</b> pulled from our verified state dataset, sourced directly from each state housing finance agency's published materials. Final eligibility is determined by the agency and your lender.</li>
+        </ol>
+        <p style="font-size:12.5px; color:var(--ink-faint);">Data sources: Freddie Mac Primary Mortgage Market Survey (rate benchmark) and the official state housing finance agency pages linked under each program. Last reviewed: July 2026.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq" style="padding-top:0;">
+  <div class="wrap">
+    <p class="kicker">Common Questions</p>
+    <h2>Down payment assistance, answered</h2>
+    <p class="section-lead">Every answer sourced from official program data.</p>
+    <details class="acc"><summary>What is down payment assistance and how does it work?</summary>
+      <p>Down payment assistance (DPA) is money — a grant, forgivable loan, or low-interest second loan — that helps cover your down payment and/or closing costs. As of Q1 2026 there are 2,679 such programs nationwide, 77% of them active and funded (source: Down Payment Resource's Q1 2026 quarterly program count), run by state housing finance agencies, cities, counties, and some employers.</p></details>
+    <details class="acc"><summary>How much down payment assistance can I get?</summary>
+      <p>It varies enormously by state and program — from a few thousand dollars up to $100,000 in some city-specific programs (e.g. NYC HomeFirst). Most state programs fall in the $7,500–$15,000 range or 3–5% of the loan amount. See your state's matched program above.</p></details>
+    <details class="acc"><summary>Do I have to be a first-time homebuyer to qualify?</summary>
+      <p>Not always. Many programs are for first-time buyers, but a large share are open to repeat buyers who haven't owned a home in the past three years, or to specific groups (teachers, veterans, healthcare workers).</p></details>
+    <details class="acc"><summary>What credit score do I need for down payment assistance?</summary>
+      <p>Many state programs set a 620 minimum, paired with income limits based on area median income. Requirements are set by each agency and vary — check the official program page linked above.</p></details>
+    <details class="acc"><summary>Is down payment assistance free money, or do I have to pay it back?</summary>
+      <p>Depends on the program. Some are outright grants. Many are deferred, forgivable second loans (forgiven after living in the home a set number of years). Others are low- or zero-interest loans repaid on sale or refinance.</p></details>
+    <details class="acc"><summary>Can I combine down payment assistance with an FHA, VA, or USDA loan?</summary>
+      <p>Usually yes — DPA is designed to pair with a first mortgage. FHA loans need 3.5% down, VA and USDA allow 0% down, and DPA can often cover part or all of that plus closing costs, subject to lender and program rules.</p></details>
+  </div>
+</section>
+
+<!-- ═══ AD SLOT 2 · in-content, after FAQ ═══ -->
+<div class="wrap" style="padding:0 24px 44px;">
+  <div class="ad in-content" data-ad-slot="after-faq">
+    <span class="ad-label">Advertisement</span>
+    <div class="ad-body"><!-- AdSense in-content unit --> Sponsored — in-content unit</div>
+  </div>
+</div>
+
+<div class="disclosure" id="disclosure">
+  <div class="wrap">
+    This calculator provides estimates for general educational purposes only and is not a loan offer, pre-approval, or eligibility determination. Down payment assistance program terms, income limits, and availability change and are set solely by each state housing finance agency. Lender links on this page may be affiliate links; lenders are never ranked or ordered by compensation. Consult a HUD-approved housing counselor or licensed loan officer before making a financial decision. We are not affiliated with any state housing finance agency.
+  </div>
+</div>
+
+<!-- ═══ AD SLOT 3 · footer leaderboard ═══ -->
+<div class="wrap" style="padding:26px 24px;">
+  <div class="ad leaderboard" data-ad-slot="footer-leaderboard">
+    <span class="ad-label">Advertisement</span>
+    <div class="ad-body"><!-- AdSense leaderboard 970x90 / responsive --> Sponsored — leaderboard unit</div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="brand">DPA<em>·</em>Estimator</span>
+        <p class="tag">Independent home-affordability and down payment assistance education tool. Every program linked to its official state agency. Not a lender.</p>
+      </div>
+      <div>
+        <h4>The Tool</h4>
+        <ul>
+          <li><a href="#calc">Calculator</a></li>
+          <li><a href="#plan">Action plan</a></li>
+          <li><a href="#video">Video walkthrough</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#offer">The Playbook ($27)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Trust &amp; Legal</h4>
+        <ul>
+          <li><a href="#methodology">Methodology</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of use</a></li>
+          <li><a href="#disclosure">Advertising disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <div>&copy; 2026 DPA Estimator — a home-affordability tool. Not a lender.</div>
+      <div>Estimates use FHA 31/43 DTI guidelines · verify programs with your state agency</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Hidden print-only PDF report -->
+<div id="printReport">
+  <h1>Your Home Affordability &amp; Down Payment Assistance Report</h1>
+  <div id="prDate" style="color:#666; font-size:11px;"></div>
+  <h2>Your numbers</h2><table id="prInputs"></table>
+  <h2>Decision report</h2><table id="prResults"></table>
+  <h2>Matched program</h2><div id="prProgram"></div>
+  <h2>Your action plan</h2><ol id="prPlan"></ol>
+  <div class="fine">Educational estimate only — not a loan offer, pre-approval, or eligibility determination. Program terms are set solely by each state housing finance agency. Generated by DPA Estimator. Methodology: FHA 31/43 DTI guidelines, 30-yr amortization, 1.1% tax / 0.35% insurance national averages.</div>
+</div>
+
+<script>
+// ================= CONFIG — the ONLY block to edit when wiring the site live =================
+const CONFIG = {
+  // MailerLite embedded-form subscribe endpoint (account 2499190, form "DPA Calculator — Report + Fee-Buster Capture").
+  // Subscribers land in the "DPA Calculator Leads" group → 7-day nurture automation.
+  espEndpoint: "https://assets.mailerlite.com/jsonp/2499190/forms/192497350459000193/subscribe",
+  tripwireCheckoutUrl: "https://shueskills.gumroad.com/l/kphcys",   // $27 Quick-Start Rate & Fee Playbook (Gumroad)
+  upsellCheckoutUrl: "https://shueskills.gumroad.com/l/saueyf",     // $97 Complete Coaching System (Gumroad) — publish it "for sale" in Gumroad to go live
+  affiliateUrl: "",           // TODO: lender-comparison affiliate URL. Empty = hides link.
+  videoEmbedUrl: "walkthrough-video-ui.mp4", // NotebookLM UI walkthrough (deployed alongside this file).
+  ga4Id: "G-RJ5SHMEZWN",      // GA4 stream shared with V1 for one-property A/B.
+  siteVariant: "v4-flagship"  // A/B marker — stamped on every GA4 event so V4 is segmentable vs V1.
+};
+
+// --- GA4 loader + event helper (safe no-op until CONFIG.ga4Id is set) ---
+if (CONFIG.ga4Id) {
+  const s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + CONFIG.ga4Id;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+  gtag('js', new Date()); gtag('config', CONFIG.ga4Id, { site_variant: CONFIG.siteVariant });
+}
+const track = (name, params) => { if (window.gtag) gtag('event', name, Object.assign({ site_variant: CONFIG.siteVariant }, params || {})); };
+// =============================================================================================
+
+// STATE_PROGRAMS — verified starter dataset (11 states), each source checked against the
+// official state housing finance agency site (July 2026). Expand only with verified sources.
+const STATE_PROGRAMS = {
+  CA: { name:"California", program:"CalHFA MyHome Assistance Program", type:"Deferred-payment junior loan",
+        pct:3, note:"Up to 3% of purchase price/appraised value (whichever is lower), deferred second mortgage.",
+        url:"https://www.calhfa.ca.gov/homebuyer/programs/myhome.htm" },
+  TX: { name:"Texas", program:"TSAHC Down Payment Assistance Grants", type:"Grant (non-repayable)",
+        pct:4, note:"Grants of up to ~4-5% of the loan amount; exact % varies by program tier.",
+        url:"https://www.tsahc.org/homebuyers-renters/loans-down-payment-assistance" },
+  NY: { name:"New York (NYC)", program:"HPD HomeFirst Down Payment Assistance", type:"Forgivable loan",
+        pct:null, flat:100000, note:"Up to $100,000 toward down payment or closing costs in NYC's five boroughs.",
+        url:"https://www.nyc.gov/site/hpd/services-and-information/homefirst-down-payment-assistance-program.page" },
+  NJ: { name:"New Jersey", program:"NJHMFA Down Payment Assistance Program", type:"Second loan",
+        pct:null, flat:15000, note:"Up to $15,000, varies by county.",
+        url:"https://www.nj.gov/dca/hmfa/homebuyers-and-renters/homebuyers/" },
+  IL: { name:"Illinois", program:"IHDA Access Mortgage", type:"Second loan",
+        pct:null, flat:10000, note:"Up to $10,000 for eligible borrowers.",
+        url:"https://www.ihda.org" },
+  OK: { name:"Oklahoma", program:"OHFA Homebuyer Down Payment Assistance", type:"Secondary loan",
+        pct:3.5, note:"3.5% of the primary mortgage amount, paired with a 30-year fixed OHFA loan.",
+        url:"https://www.ohfa.org/dpaproducts/" },
+  FL: { name:"Florida", program:"Florida Housing Finance Corporation Assistance", type:"Second mortgage",
+        pct:null, flat:10000, note:"Assistance amount varies by program (Florida Assist, HFA Preferred, etc.) — check current offerings.",
+        url:"https://www.floridahousing.org/" },
+  OH: { name:"Ohio", program:"OHFA Down Payment Assistance", type:"Forgivable 0% loan (7-yr)",
+        pct:3.5, note:"3% for conventional loans, 3.5% for FHA/VA/USDA government loans.",
+        url:"https://www.myohiohome.org/downpaymentassistance.aspx" },
+  PA: { name:"Pennsylvania", program:"PHFA HOMEstead Downpayment & Closing Cost Assistance", type:"Deferred, forgivable loan",
+        pct:null, flat:10000, note:"Up to $10,000-$15,000 depending on county, 0% interest, forgiven over time.",
+        url:"https://www.phfa.org" },
+  GA: { name:"Georgia", program:"Georgia DCA Down Payment Assistance", type:"Second mortgage",
+        pct:null, flat:7500, note:"Assistance amount varies by program tier — check current DCA offerings.",
+        url:"https://dca.georgia.gov" },
+  NC: { name:"North Carolina", program:"NC Housing Finance Agency DPA", type:"Deferred second mortgage",
+        pct:null, flat:8000, note:"Assistance amount varies by program — check current NCHFA offerings.",
+        url:"https://www.nchfa.com" },
+};
+
+const $ = id => document.getElementById(id);
+const stateSelect = $('state');
+Object.keys(STATE_PROGRAMS).forEach(code => {
+  const opt = document.createElement('option');
+  opt.value = code; opt.textContent = STATE_PROGRAMS[code].name;
+  stateSelect.appendChild(opt);
+});
+stateSelect.value = 'CA';
+
+$('rate').addEventListener('input', () => $('rateVal').textContent = $('rate').value);
+
+const currency = n => '$' + Math.round(n).toLocaleString('en-US');
+
+function monthlyPI(principal, annualRatePct, years) {
+  const r = annualRatePct/100/12, n = years*12;
+  if (principal <= 0) return 0;
+  if (r === 0) return principal/n;
+  return principal * (r*Math.pow(1+r,n)) / (Math.pow(1+r,n)-1);
+}
+function solveLoanFromPayment(paymentBudget, annualRatePct, years) {
+  const r = annualRatePct/100/12, n = years*12;
+  if (paymentBudget <= 0) return 0;
+  if (r === 0) return paymentBudget*n;
+  return paymentBudget * (Math.pow(1+r,n)-1) / (r*Math.pow(1+r,n));
+}
+
+function renderPrograms(code) {
+  const p = STATE_PROGRAMS[code];
+  $('stateNameHeading').textContent = p.name;
+  const amtText = p.flat ? ('Up to ' + currency(p.flat)) : ('Typically ~' + p.pct + '% of loan/purchase amount');
+  $('programList').innerHTML = `
+    <div class="program-card">
+      <div class="name">${p.program}</div>
+      <div class="meta">${p.type} &middot; ${p.name}</div>
+      <div class="amt">${amtText}</div>
+      <p style="font-size:14px; color:var(--ink-soft); margin:10px 0;">${p.note}</p>
+      <a href="${p.url}" target="_blank" rel="noopener" style="font-size:13.5px;">Official program page &rarr;</a>
+    </div>`;
+}
+
+let LAST = null; // last computed result, used by PDF report
+
+function calculate() {
+  const code = stateSelect.value;
+  const income = parseFloat($('income').value) || 0;
+  const debts = parseFloat($('debts').value) || 0;
+  const targetPrice = parseFloat($('price').value) || 0;
+  const savings = parseFloat($('savings').value) || 0;
+  const rent = parseFloat($('rent').value) || 0;
+  const monthlySave = parseFloat($('monthlySave').value) || 0;
+  const credit = parseInt($('credit').value, 10);
+  const rate = parseFloat($('rate').value);
+  const years = 30;
+
+  // --- Core affordability (verified V1 engine) ---
+  const grossMonthly = income/12;
+  const frontEndBudget = grossMonthly * 0.31;
+  const backEndBudget = (grossMonthly * 0.43) - debts;
+  const pitiBudget = Math.max(0, Math.min(frontEndBudget, backEndBudget));
+
+  let estPrice = solveLoanFromPayment(pitiBudget, rate, years) / 0.97;
+  for (let i = 0; i < 6; i++) {
+    const taxIns = estPrice * 0.0145/12;
+    const loanAmt = solveLoanFromPayment(Math.max(0, pitiBudget - taxIns), rate, years);
+    estPrice = loanAmt / 0.97;
+  }
+  const pi = monthlyPI(estPrice*0.97, rate, years);
+  const taxM = estPrice*0.011/12, insM = estPrice*0.0035/12;
+  const totalPITI = pi + taxM + insM;
+
+  // --- Interpretation ---
+  const ratio = targetPrice > 0 && estPrice > 0 ? targetPrice/estPrice : 0;
+  let verdict;
+  if (estPrice <= 0) {
+    verdict = `With these numbers your debt load leaves <b>no room for a housing payment</b> under the 43% back-end guideline. Reducing monthly debts is step one — see your action plan.`;
+  } else if (ratio === 0) {
+    verdict = `You likely qualify for a home around <b>${currency(estPrice)}</b>. Enter a target price to compare.`;
+  } else if (ratio <= 0.85) {
+    verdict = `Your ${currency(targetPrice)} target is <b>comfortably inside</b> your estimated ${currency(estPrice)} capacity — you have room to negotiate or buy down your rate.`;
+  } else if (ratio <= 1.0) {
+    verdict = `Your ${currency(targetPrice)} target <b>fits</b> your estimated ${currency(estPrice)} capacity, with little slack. A rate drop or bigger down payment would add breathing room.`;
+  } else if (ratio <= 1.15) {
+    verdict = `Your ${currency(targetPrice)} target is a <b>stretch</b> — about ${Math.round((ratio-1)*100)}% over your estimated ${currency(estPrice)} capacity. Assistance or a lower price band could close the difference.`;
+  } else {
+    verdict = `Your ${currency(targetPrice)} target is <b>${Math.round((ratio-1)*100)}% above</b> your estimated ${currency(estPrice)} capacity. The action plan below shows the highest-leverage moves.`;
+  }
+  $('verdictText').innerHTML = verdict;
+
+  // --- Risk analysis chips ---
+  const chips = [];
+  const backEndDTI = grossMonthly > 0 ? (totalPITI + debts)/grossMonthly : 0;
+  chips.push(backEndDTI <= 0.36
+    ? {c:'ok', t:'DTI healthy (' + Math.round(backEndDTI*100) + '%)'}
+    : backEndDTI <= 0.43 ? {c:'warn', t:'DTI near ceiling (' + Math.round(backEndDTI*100) + '%)'}
+    : {c:'risk', t:'DTI over 43% (' + Math.round(backEndDTI*100) + '%)'});
+  if (rent > 0 && totalPITI > 0) {
+    const shock = totalPITI/rent;
+    chips.push(shock <= 1.25 ? {c:'ok', t:'Payment shock low (' + shock.toFixed(1) + 'x rent)'}
+      : shock <= 1.5 ? {c:'warn', t:'Payment ' + shock.toFixed(1) + 'x your rent'}
+      : {c:'risk', t:'Payment shock high (' + shock.toFixed(1) + 'x rent)'});
+  }
+  const dpNeeded = targetPrice * 0.03;
+  const reserveAfter = savings - dpNeeded;
+  chips.push(reserveAfter >= totalPITI*2 ? {c:'ok', t:'Reserves: 2+ months after closing'}
+    : reserveAfter >= 0 ? {c:'warn', t:'Thin reserves after closing'}
+    : {c:'risk', t:'Savings below 3% down'});
+  $('riskChips').innerHTML = chips.map(x => `<span class="chip ${x.c}">${x.t}</span>`).join('');
+
+  // --- Payment breakdown ---
+  $('maxPrice').textContent = currency(estPrice);
+  $('outPI').textContent = currency(pi);
+  $('outTax').textContent = currency(taxM);
+  $('outIns').textContent = currency(insM);
+  $('outTotal').textContent = currency(totalPITI);
+  $('outShock').textContent = rent > 0 ? (totalPITI/rent).toFixed(2) + 'x rent' : 'no rent entered';
+
+  // --- Savings gap + time to goal ---
+  const gap = dpNeeded - savings;
+  let gapHtml;
+  if (gap <= 0) {
+    gapHtml = `<span class="status-ok">You have enough saved</span> for a 3% down payment on a ${currency(targetPrice)} home (${currency(dpNeeded)} needed).`;
+  } else {
+    gapHtml = `<span class="status-gap">${currency(gap)} short</span> of a 3% down payment (${currency(dpNeeded)} needed).`;
+    if (monthlySave > 0) {
+      const months = Math.ceil(gap/monthlySave);
+      gapHtml += ` At ${currency(monthlySave)}/month you'd close it in <b>${months} month${months===1?'':'s'}</b> — or faster with the program below.`;
+    }
+  }
+  $('gapText').innerHTML = gapHtml;
+
+  // --- Program match ---
+  const p = STATE_PROGRAMS[code];
+  const assistAmt = p.flat ? p.flat : (targetPrice * (p.pct/100));
+  let matchHtml;
+  if (gap <= 0) {
+    matchHtml = `You may not need it for this price point, but <b>${p.program}</b> is still worth exploring for closing costs.`;
+  } else if (assistAmt >= gap) {
+    matchHtml = `<b>${p.program}</b> (${p.flat ? currency(p.flat) : p.pct + '%'}) could fully cover your ${currency(gap)} gap.`;
+  } else {
+    matchHtml = `<b>${p.program}</b> could cover an estimated ${currency(assistAmt)} of your ${currency(gap)} gap — you'd still need ${currency(gap - assistAmt)} more.`;
+  }
+  $('matchText').innerHTML = matchHtml;
+
+  // --- Qualification signals ---
+  let qual;
+  if (credit >= 640) {
+    qual = `Your credit range clears the <b>620 floor</b> most state DPA programs use and the 580 FHA minimum. Income limits (set per county as % of area median income) are the next thing to verify on the official program page.`;
+  } else if (credit >= 600) {
+    qual = `Your range sits <b>near the 620 floor</b> many state programs use. You may still qualify for FHA (580+) paths; a 20-40 point improvement typically unlocks more programs and better pricing.`;
+  } else {
+    qual = `Most state DPA programs set a <b>620 minimum</b> and FHA lenders typically want 580+. Credit building is your highest-leverage move — it's step one in your plan below.`;
+  }
+  $('qualText').innerHTML = qual;
+
+  // --- Action plan ---
+  const plan = [];
+  if (credit < 600) plan.push(`<b>Build credit past 580-620.</b> Pay every account on time, keep card balances under 30% of limits, and dispute reporting errors. This single move unlocks both FHA lending and most DPA programs.`);
+  if (backEndDTI > 0.43 || estPrice <= 0) plan.push(`<b>Reduce monthly debt payments.</b> Every $100/month of debt you clear adds roughly ${currency(solveLoanFromPayment(100, rate, years))} of home-buying capacity at today's rate.`);
+  plan.push(`<b>Verify your program:</b> open the official <a href="${p.url}" target="_blank" rel="noopener">${p.program}</a> page and check its current income limits and credit requirements for your county.`);
+  if (gap > 0) plan.push(`<b>Close your ${currency(gap)} gap:</b> combine ${assistAmt >= gap ? 'the matched assistance (which could cover it fully)' : 'the matched assistance (' + currency(assistAmt) + ')'} with your ${currency(monthlySave)}/month savings rate.`);
+  plan.push(`<b>Complete a HUD-approved homebuyer education course</b> — most DPA programs require it, it's low-cost, and it strengthens your file.`);
+  plan.push(`<b>Get quotes from 3+ lenders</b> that participate in your state's program. Ask each for a Loan Estimate the same day so the numbers are comparable.`);
+  if (rent > 0 && totalPITI/rent > 1.4) plan.push(`<b>Stress-test the payment:</b> your estimated PITI is ${(totalPITI/rent).toFixed(1)}x your rent. Live on the difference for 2-3 months first — save the surplus straight into your down payment fund.`);
+  plan.push(`<b>Keep files ready:</b> 2 years of W-2s/tax returns, 2 months of bank statements, and pay stubs — DPA layering means extra documentation.`);
+  plan.push(`<b>Negotiate your closing fees.</b> This is where first-time buyers most often hand back $3,000+ of the money the steps above just saved — the fees are negotiable, but only if you name them. <a href="#offer">The Homebuyer's Edge script</a> covers exactly this.`);
+  $('planList').innerHTML = plan.map(x => `<li>${x}</li>`).join('');
+
+  $('stateBadge').textContent = p.name.toUpperCase();
+  renderPrograms(code);
+
+  LAST = { code, income, debts, targetPrice, savings, rent, monthlySave, credit, rate,
+           estPrice, pi, taxM, insM, totalPITI, backEndDTI, gap, dpNeeded, assistAmt, p, plan, verdict, qual };
+  track('calculate', { state: code, est_price: Math.round(estPrice) });
+}
+
+$('calcBtn').addEventListener('click', calculate);
+$('calcBtnSticky').addEventListener('click', () => { calculate(); $('resultsPanel').scrollIntoView({behavior:'smooth'}); });
+stateSelect.addEventListener('change', calculate);
+$('planBtn').addEventListener('click', () => $('plan').scrollIntoView({behavior:'smooth'}));
+calculate();
+
+// --- PDF report (print stylesheet — zero dependencies, keeps page <100KB) ---
+$('pdfBtn').addEventListener('click', () => {
+  track('pdf_download');
+  if (!LAST) calculate();
+  const L = LAST;
+  $('prDate').textContent = 'Generated ' + new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}) + ' · dpaestimator report';
+  $('prInputs').innerHTML =
+    `<tr><td>State</td><td>${L.p.name}</td></tr><tr><td>Annual household income</td><td>${currency(L.income)}</td></tr>` +
+    `<tr><td>Monthly debts</td><td>${currency(L.debts)}</td></tr><tr><td>Target price</td><td>${currency(L.targetPrice)}</td></tr>` +
+    `<tr><td>Savings</td><td>${currency(L.savings)}</td></tr><tr><td>Current rent</td><td>${currency(L.rent)}</td></tr>` +
+    `<tr><td>Monthly savings rate</td><td>${currency(L.monthlySave)}</td></tr><tr><td>Assumed rate</td><td>${L.rate}%</td></tr>`;
+  $('prResults').innerHTML =
+    `<tr><td>Estimated qualifying price</td><td><b>${currency(L.estPrice)}</b></td></tr>` +
+    `<tr><td>Principal &amp; interest</td><td>${currency(L.pi)}</td></tr><tr><td>Est. tax + insurance</td><td>${currency(L.taxM + L.insM)}</td></tr>` +
+    `<tr><td>Total est. PITI</td><td><b>${currency(L.totalPITI)}</b></td></tr><tr><td>Back-end DTI</td><td>${Math.round(L.backEndDTI*100)}%</td></tr>` +
+    `<tr><td>3% down payment needed</td><td>${currency(L.dpNeeded)}</td></tr><tr><td>Gap vs savings</td><td>${L.gap > 0 ? currency(L.gap) + ' short' : 'covered'}</td></tr>`;
+  $('prProgram').innerHTML = `<b>${L.p.program}</b> (${L.p.type}) — ${L.p.note}<br>Official page: ${L.p.url}`;
+  $('prPlan').innerHTML = L.plan.map(x => `<li>${x.replace(/<a [^>]+>|<\/a>/g,'')}</li>`).join('');
+  window.print();
+});
+
+// --- Lead capture: posts to CONFIG.espEndpoint when set; graceful stub otherwise ---
+$('captureForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = $('emailCapture').value;
+  const btn = $('captureBtn');
+  if (!email) return;
+  const done = () => { btn.textContent = 'Sent ✓'; btn.disabled = true; $('emailCapture').disabled = true; track('email_capture'); };
+  if (CONFIG.espEndpoint) {
+    // MailerLite embedded-form submit: form-encoded fields[email], no-cors (opaque but registers).
+    const body = new URLSearchParams({ 'fields[email]': email, 'ml-submit': '1', 'anticsrf': 'true' });
+    fetch(CONFIG.espEndpoint, { method:'POST', mode:'no-cors',
+      headers:{'Content-Type':'application/x-www-form-urlencoded'}, body })
+      .then(done).catch(() => { btn.textContent = 'Try again'; btn.disabled = false; });
+  } else {
+    console.log('[lead-capture stub] set CONFIG.espEndpoint. Email:', email);
+    done();
+  }
+});
+
+// --- Tripwire ($27) + upsell ($97) checkout links, set at load so the first click navigates ---
+if (CONFIG.tripwireCheckoutUrl) {
+  const t = $('tripwireLink'); t.href = CONFIG.tripwireCheckoutUrl; t.target = '_blank';
+  t.addEventListener('click', () => track('tripwire_click', { value: 27, currency: 'USD' }));
+} else {
+  $('tripwireLink').addEventListener('click', e => { e.preventDefault(); alert('Set CONFIG.tripwireCheckoutUrl.'); });
+}
+if (CONFIG.upsellCheckoutUrl) {
+  const u = $('upsellLink'); u.href = CONFIG.upsellCheckoutUrl; u.target = '_blank';
+  u.addEventListener('click', () => track('upsell_click', { value: 97, currency: 'USD' }));
+} else if ($('upsellNote')) {
+  $('upsellNote').style.display = 'none';
+}
+
+// --- Affiliate link + video embed from CONFIG ---
+if (CONFIG.affiliateUrl) $('affiliateLink').href = CONFIG.affiliateUrl;
+else $('affiliateBox').style.display = 'none';
+if (CONFIG.videoEmbedUrl) {
+  $('videoShell').innerHTML = /\.(mp4|webm)(\?|$)/i.test(CONFIG.videoEmbedUrl)
+    ? '<video controls preload="metadata" poster="video-poster.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" src="' + CONFIG.videoEmbedUrl + '" title="Calculator walkthrough"></video>'
+    : '<iframe src="' + CONFIG.videoEmbedUrl + '" title="Calculator walkthrough" allowfullscreen loading="lazy"></iframe>';
+}
+
+// --- Video chapters: seek the injected <video> when a chapter is clicked ---
+(function(){
+  const shell = $('videoShell');
+  if (!shell) return;
+  document.querySelectorAll('.chapters button[data-t]').forEach(b => {
+    b.addEventListener('click', () => {
+      const v = shell.querySelector('video');
+      if (!v) return;
+      const t = parseFloat(b.dataset.t) || 0;
+      v.currentTime = t;
+      const p = v.play(); if (p && p.catch) p.catch(()=>{});
+      shell.scrollIntoView({behavior:'smooth', block:'center'});
+    });
+  });
+})();
+
+// --- Guaranteed in-page anchor scrolling (native hash-jump silently fails in some states) ---
+document.addEventListener('click', function(e) {
+  const a = e.target.closest('a[href^="#"]');
+  if (!a) return;
+  const t = document.querySelector(a.getAttribute('href'));
+  if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'}); history.replaceState(null, '', a.getAttribute('href')); }
+});
+
+// --- Hero image resilience: if the CDN drops it, retry once with a cache-buster ---
+(function(){
+  const probe = new Image();
+  probe.onerror = () => {
+    document.querySelector('.hero').style.backgroundImage =
+      "linear-gradient(115deg, rgba(8,14,29,.92) 0%, rgba(11,20,40,.78) 38%, rgba(11,20,40,.25) 75%, rgba(11,20,40,.45) 100%), url('hero.jpg?r=" + Date.now() + "')";
+  };
+  probe.src = 'hero.jpg';
+})();
+</script>
+
+</body>
+</html>
