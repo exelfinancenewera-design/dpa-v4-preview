@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- @SLOT:HEAD_SEO -->
 <title>How Much House Can I Afford With Down Payment Assistance? | DPA Affordability Calculator</title>
 <meta name="description" content="The only calculator that answers both questions at once: how much house you can afford AND which down payment assistance program could close your gap — with a personalized action plan, instantly, no email required.">
 <link rel="canonical" href="https://dpaestimator.com/">
@@ -17,11 +18,13 @@
 <meta name="twitter:title" content="How Much House Can I Afford With Down Payment Assistance?">
 <meta name="twitter:description" content="Free calculator: your affordability + your state's down payment assistance match + a personalized action plan. No email required.">
 <meta name="twitter:image" content="https://dpaestimator.com/hero.jpg">
+<!-- @/SLOT:HEAD_SEO -->
 <link rel="preload" as="image" href="hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+<!-- @SLOT:JSONLD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -87,6 +90,7 @@
   ]
 }
 </script>
+<!-- @/SLOT:JSONLD -->
 
 <style>
   /* ============================================================================
@@ -367,20 +371,25 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top">DPA<em>·</em>Estimator</a>
-    <nav class="links">
+    <!-- @SLOT:BRAND_NAV -->
+<a class="brand" href="#top">DPA<em>·</em>Estimator</a>
+<!-- @/SLOT:BRAND_NAV -->
+    <!-- @SLOT:NAV_LINKS -->
+<nav class="links">
       <a href="#calc">Calculator</a>
       <a href="#plan">Action Plan</a>
       <a href="#video">Walkthrough</a>
       <a href="#faq">FAQ</a>
       <a class="navcta" href="#calc">Get my number</a>
     </nav>
+<!-- @/SLOT:NAV_LINKS -->
   </div>
 </header>
 
 <div class="hero" id="top">
   <div class="wrap">
-    <h1>How much house can you afford <em>with</em> down payment assistance?</h1>
+    <!-- @SLOT:HERO_CONTENT -->
+<h1>How much house can you afford <em>with</em> down payment assistance?</h1>
     <p class="standfirst">Your real affordability, your state's assistance match, and your action plan — in 30 seconds. No email required.</p>
     <div class="cta-row">
       <a class="btn" href="#calc" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'});return false;">See what you qualify for — free &darr;</a>
@@ -391,11 +400,13 @@
       <span>&#128196; Programs linked to official state agencies</span>
       <span>&#9878; Estimates only — not a loan offer</span>
     </div>
+<!-- @/SLOT:HERO_CONTENT -->
   </div>
 </div>
 
 <div class="wrap stat-strip">
-  <div class="stat-grid">
+  <!-- @SLOT:STRIP_CONTENT -->
+<div class="stat-grid">
     <div class="stat"><div class="n">2,679</div><div class="l">assistance programs nationwide, 77% active &amp; funded — Down Payment Resource, Q1 2026</div></div>
     <div class="stat"><div class="n">31 / 43</div><div class="l">FHA debt-to-income guidelines — the same math a lender applies to your file</div></div>
     <div class="stat"><div class="n">11 states</div><div class="l">verified program dataset, every program linked to its official agency page</div></div>
@@ -403,15 +414,19 @@
   <div class="answer-bar" id="answer">
     <p><b>The short answer:</b> you can typically afford a home where the total monthly payment stays under 31% of your gross income (and under 43% with your other debts) — and as of Q1 2026 there are <b>2,679 down payment assistance programs</b> in the US, 77% of them active and funded (source: Down Payment Resource), that can cover part or all of the 3% minimum down payment. This calculator computes both in one step.</p>
   </div>
+<!-- @/SLOT:STRIP_CONTENT -->
 </div>
 
 <div class="wrap calc-band" id="calc">
-  <p class="kicker">The Calculator</p>
+  <!-- @SLOT:CALC_HEADING -->
+<p class="kicker">The Calculator</p>
   <h2 style="font-family:var(--serif); font-size:clamp(26px,3.2vw,40px); color:var(--navy); margin:0 0 30px;">Two answers. One calculation.</h2>
+<!-- @/SLOT:CALC_HEADING -->
   <div class="calc-grid">
     <div class="calc-card inputs">
       <div class="card-head"><h3 class="card-title">Your numbers</h3></div>
       <p class="card-note">Private — nothing is stored or sent.</p>
+<!-- @SLOT:INPUT_FIELDS -->
       <div class="row2">
         <div class="field">
           <label for="state">State</label>
@@ -466,8 +481,11 @@
         <input type="range" id="rate" min="4" max="9" step="0.125" value="6.5">
         <div class="hint"><span id="rateVal">6.5</span>% &nbsp;|&nbsp; adjust to match current quotes</div>
       </div>
+<!-- @/SLOT:INPUT_FIELDS -->
       <div style="margin-top:auto; padding-top:8px;">
-        <button class="btn" id="calcBtn" style="width:100%;">Calculate my affordability &amp; match</button>
+        <!-- @SLOT:CALC_BTN_MAIN -->
+<button class="btn" id="calcBtn" style="width:100%;">Calculate my affordability &amp; match</button>
+<!-- @/SLOT:CALC_BTN_MAIN -->
       </div>
     </div>
 
@@ -476,23 +494,30 @@
         <h3 class="card-title">Your decision report</h3>
         <span class="chip warn" id="stateBadge">CALIFORNIA</span>
       </div>
-      <p class="card-note">FHA 31/43 DTI guidelines · 3% minimum down, before assistance.</p>
+      <!-- @SLOT:REPORT_SUB -->
+<p class="card-note">FHA 31/43 DTI guidelines · 3% minimum down, before assistance.</p>
+<!-- @/SLOT:REPORT_SUB -->
 
-      <div class="result-label">Estimated home price you likely qualify for</div>
+      <!-- @SLOT:RESULT_LABEL -->
+<div class="result-label">Estimated home price you likely qualify for</div>
+<!-- @/SLOT:RESULT_LABEL -->
       <div class="result-figure" id="maxPrice">$0</div>
 
       <div class="verdict" id="verdictText"></div>
       <div class="chips" id="riskChips"></div>
 
-      <div class="breakdown">
+      <!-- @SLOT:BREAKDOWN -->
+<div class="breakdown">
         <div class="line"><span>Principal &amp; interest</span><b id="outPI">$0</b></div>
         <div class="line"><span>Est. property tax (1.1%)</span><b id="outTax">$0</b></div>
         <div class="line"><span>Est. homeowners insurance</span><b id="outIns">$0</b></div>
         <div class="line"><span>Est. total monthly payment (PITI)</span><b id="outTotal">$0</b></div>
         <div class="line"><span>vs. your current rent</span><b id="outShock">—</b></div>
       </div>
+<!-- @/SLOT:BREAKDOWN -->
 
-      <div class="gap-box">
+      <!-- @SLOT:GAPBOXES -->
+<div class="gap-box">
         <div class="result-label">Down payment gap &amp; time to close it</div>
         <div id="gapText"></div>
       </div>
@@ -504,6 +529,7 @@
         <div class="result-label">Qualification signals</div>
         <div id="qualText"></div>
       </div>
+<!-- @/SLOT:GAPBOXES -->
 
       <div class="report-actions">
         <button class="btn small" id="pdfBtn">Download PDF report</button>
@@ -512,7 +538,9 @@
 
       <div class="capture-box">
         <form id="captureForm">
-          <label for="emailCapture">Email me this report + the free Fee-Buster Checklist (PDF)</label>
+          <!-- @SLOT:CAPTURE_LABEL -->
+<label for="emailCapture">Email me this report + the free Fee-Buster Checklist (PDF)</label>
+<!-- @/SLOT:CAPTURE_LABEL -->
           <div class="capture-row">
             <input type="email" id="emailCapture" placeholder="you@email.com" required>
             <button type="submit" id="captureBtn">Send it</button>
@@ -521,15 +549,19 @@
         </form>
       </div>
 
-      <div class="affiliate-box" id="affiliateBox">
+      <!-- @SLOT:AFFILIATE_BOX -->
+<div class="affiliate-box" id="affiliateBox">
         Ready for real quotes? <a href="#" id="affiliateLink" rel="sponsored noopener" target="_blank">Compare offers from licensed lenders in your state &rarr;</a>
         <div class="affiliate-fine">Advertising disclosure: we may earn a fee if you use this link. Lenders shown are not ranked by fees paid — see our <a href="#disclosure">disclosure</a>.</div>
       </div>
+<!-- @/SLOT:AFFILIATE_BOX -->
     </div>
   </div>
 </div>
 
-<div class="sticky-calc"><button class="btn" id="calcBtnSticky">Calculate my affordability &amp; match</button></div>
+<div class="sticky-calc"><!-- @SLOT:CALC_BTN_STICKY -->
+<button class="btn" id="calcBtnSticky">Calculate my affordability &amp; match</button>
+<!-- @/SLOT:CALC_BTN_STICKY --></div>
 
 <!-- ═══ AD SLOT 1 · post-result, native-styled ═══ -->
 <div class="wrap" style="padding:6px 24px 40px;">
@@ -541,7 +573,8 @@
 
 <section class="section dark-band" style="padding:64px 0;">
   <div class="wrap">
-    <div class="tripwire-card" id="offer" style="border:none; box-shadow:none; background:none; padding:0;">
+    <!-- @SLOT:OFFER_CARD -->
+<div class="tripwire-card" id="offer" style="border:none; box-shadow:none; background:none; padding:0;">
       <div class="txt">
         <p class="kicker">Before you call a lender</p>
         <h3>The fees they're counting on you not to question.</h3>
@@ -551,16 +584,20 @@
       </div>
       <a class="btn" href="#" id="tripwireLink" rel="noopener">Arm me before I call — $27 &rarr;</a>
     </div>
+<!-- @/SLOT:OFFER_CARD -->
   </div>
 </section>
 
 <section class="section" id="plan">
   <div class="wrap">
-    <p class="kicker">Your Personalized Action Plan</p>
+    <!-- @SLOT:PLAN_HEAD -->
+<p class="kicker">Your Personalized Action Plan</p>
     <h2>The exact moves, in order, for your numbers</h2>
     <p class="section-lead">Generated from your inputs above — recalculate any time and the plan updates instantly.</p>
+<!-- @/SLOT:PLAN_HEAD -->
     <ol class="plan-list" id="planList"></ol>
-    <div class="tripwire-card" style="margin-top:26px;">
+    <!-- @SLOT:PLAN_OFFER -->
+<div class="tripwire-card" style="margin-top:26px;">
       <div class="txt">
         <h3>The plan is free. Executing it cheaply is the skill.</h3>
         <p>What happens <em>at</em> the closing table decides whether you keep your assistance money — or quietly hand it back in fees. The Homebuyer's Edge is the script for that room.</p>
@@ -568,14 +605,17 @@
       </div>
       <a class="btn" href="#offer" onclick="document.getElementById('tripwireLink').focus();">Get the Edge &rarr;</a>
     </div>
+<!-- @/SLOT:PLAN_OFFER -->
   </div>
 </section>
 
 <section class="section dark-band" id="video">
   <div class="wrap">
-    <p class="kicker">Watch The Walkthrough</p>
+    <!-- @SLOT:VIDEO_HEAD -->
+<p class="kicker">Watch The Walkthrough</p>
     <h2>How to use this calculator, start to finish</h2>
     <p class="section-lead">What each input means, how to read your report, and what to do with your plan. Jump to any chapter.</p>
+<!-- @/SLOT:VIDEO_HEAD -->
     <div class="video-layout">
       <div class="video-main">
         <div class="video-shell" id="videoShell">
@@ -584,21 +624,26 @@
             <span style="font-size:12px;">Set CONFIG.videoEmbedUrl in the script block to activate</span>
           </div>
         </div>
-        <details class="fold">
+        <!-- @SLOT:VIDEO_SUMMARY -->
+<details class="fold">
           <summary>What this walkthrough covers</summary>
           <p>The walkthrough demonstrates the calculator end to end with a real example: entering your state, income, debts, savings, target price, rent and savings rate; how the FHA 31/43 debt-to-income guidelines produce the price you likely qualify for; reading the payment breakdown (P&amp;I, tax, insurance, total PITI) and the payment-shock check against your rent; how the risk chips flag DTI, payment shock and thin reserves; how your down payment gap, time-to-goal and state program match are calculated; and how to download or email your personalized report and action plan. <em>Narration uses an AI voice.</em></p>
         </details>
+<!-- @/SLOT:VIDEO_SUMMARY -->
       </div>
       <div class="video-side">
         <h3>Chapters</h3>
-        <ol class="chapters">
+        <!-- @SLOT:CHAPTERS -->
+<ol class="chapters">
           <li><button data-t="0"><span class="t">0:00</span><span class="c">What this tool does differently</span></button></li>
           <li><button data-t="50"><span class="t">0:50</span><span class="c">Entering your numbers</span></button></li>
           <li><button data-t="120"><span class="t">2:00</span><span class="c">Reading your decision report</span></button></li>
           <li><button data-t="190"><span class="t">3:10</span><span class="c">Your program match &amp; gap</span></button></li>
           <li><button data-t="240"><span class="t">4:00</span><span class="c">Acting on your plan</span></button></li>
         </ol>
-        <details class="fold">
+<!-- @/SLOT:CHAPTERS -->
+        <!-- @SLOT:TAKEAWAYS -->
+<details class="fold">
           <summary>Key takeaways</summary>
           <ul>
             <li>Affordability is capped by the <b>lower</b> of the 31% and 43% DTI limits — clearing debt often adds more capacity than raising income.</li>
@@ -607,6 +652,7 @@
             <li>Every program links to its official state agency — verify current terms there before applying.</li>
           </ul>
         </details>
+<!-- @/SLOT:TAKEAWAYS -->
       </div>
     </div>
   </div>
@@ -614,13 +660,16 @@
 
 <section class="section">
   <div class="wrap">
-    <p class="kicker">Assistance In Your State</p>
+    <!-- @SLOT:RESOURCE_HEAD -->
+<p class="kicker">Assistance In Your State</p>
     <h2>Down payment assistance in <span id="stateNameHeading">your state</span></h2>
     <p class="section-lead">Every program links directly to the official state housing finance agency — not a lead-gen page.</p>
+<!-- @/SLOT:RESOURCE_HEAD -->
     <div id="programList"></div>
 
     <div style="margin-top:44px;" id="methodology">
-      <details class="acc">
+      <!-- @SLOT:METHODOLOGY -->
+<details class="acc">
         <summary>How we calculate this — full methodology</summary>
         <ol>
           <li><b>Affordability:</b> total monthly housing payment (PITI) is capped at 31% of gross monthly income — the standard FHA front-end guideline — and PITI plus existing debts must stay under the 43% back-end ratio. The lower of the two limits is used.</li>
@@ -633,16 +682,20 @@
         </ol>
         <p style="font-size:12.5px; color:var(--ink-faint);">Data sources: Freddie Mac Primary Mortgage Market Survey (rate benchmark) and the official state housing finance agency pages linked under each program. Last reviewed: July 2026.</p>
       </details>
+<!-- @/SLOT:METHODOLOGY -->
     </div>
   </div>
 </section>
 
 <section class="section" id="faq" style="padding-top:0;">
   <div class="wrap">
-    <p class="kicker">Common Questions</p>
+    <!-- @SLOT:FAQ_HEAD -->
+<p class="kicker">Common Questions</p>
     <h2>Down payment assistance, answered</h2>
     <p class="section-lead">Every answer sourced from official program data.</p>
-    <details class="acc"><summary>What is down payment assistance and how does it work?</summary>
+<!-- @/SLOT:FAQ_HEAD -->
+    <!-- @SLOT:FAQ_ITEMS -->
+<details class="acc"><summary>What is down payment assistance and how does it work?</summary>
       <p>Down payment assistance (DPA) is money — a grant, forgivable loan, or low-interest second loan — that helps cover your down payment and/or closing costs. As of Q1 2026 there are 2,679 such programs nationwide, 77% of them active and funded (source: Down Payment Resource's Q1 2026 quarterly program count), run by state housing finance agencies, cities, counties, and some employers.</p></details>
     <details class="acc"><summary>How much down payment assistance can I get?</summary>
       <p>It varies enormously by state and program — from a few thousand dollars up to $100,000 in some city-specific programs (e.g. NYC HomeFirst). Most state programs fall in the $7,500–$15,000 range or 3–5% of the loan amount. See your state's matched program above.</p></details>
@@ -654,6 +707,7 @@
       <p>Depends on the program. Some are outright grants. Many are deferred, forgivable second loans (forgiven after living in the home a set number of years). Others are low- or zero-interest loans repaid on sale or refinance.</p></details>
     <details class="acc"><summary>Can I combine down payment assistance with an FHA, VA, or USDA loan?</summary>
       <p>Usually yes — DPA is designed to pair with a first mortgage. FHA loans need 3.5% down, VA and USDA allow 0% down, and DPA can often cover part or all of that plus closing costs, subject to lender and program rules.</p></details>
+<!-- @/SLOT:FAQ_ITEMS -->
   </div>
 </section>
 
@@ -667,7 +721,9 @@
 
 <div class="disclosure" id="disclosure">
   <div class="wrap">
-    This calculator provides estimates for general educational purposes only and is not a loan offer, pre-approval, or eligibility determination. Down payment assistance program terms, income limits, and availability change and are set solely by each state housing finance agency. Lender links on this page may be affiliate links; lenders are never ranked or ordered by compensation. Consult a HUD-approved housing counselor or licensed loan officer before making a financial decision. We are not affiliated with any state housing finance agency.
+    <!-- @SLOT:DISCLOSURE_TEXT -->
+This calculator provides estimates for general educational purposes only and is not a loan offer, pre-approval, or eligibility determination. Down payment assistance program terms, income limits, and availability change and are set solely by each state housing finance agency. Lender links on this page may be affiliate links; lenders are never ranked or ordered by compensation. Consult a HUD-approved housing counselor or licensed loan officer before making a financial decision. We are not affiliated with any state housing finance agency.
+<!-- @/SLOT:DISCLOSURE_TEXT -->
   </div>
 </div>
 
@@ -683,17 +739,23 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <span class="brand">DPA<em>·</em>Estimator</span>
-        <p class="tag">Independent home-affordability and down payment assistance education tool. Every program linked to its official state agency. Not a lender.</p>
+        <!-- @SLOT:FOOTER_BRAND -->
+<span class="brand">DPA<em>·</em>Estimator</span>
+<!-- @/SLOT:FOOTER_BRAND -->
+        <!-- @SLOT:FOOTER_TAG -->
+<p class="tag">Independent home-affordability and down payment assistance education tool. Every program linked to its official state agency. Not a lender.</p>
+<!-- @/SLOT:FOOTER_TAG -->
       </div>
       <div>
         <h4>The Tool</h4>
         <ul>
-          <li><a href="#calc">Calculator</a></li>
+          <!-- @SLOT:FOOTER_TOOL_LINKS -->
+<li><a href="#calc">Calculator</a></li>
           <li><a href="#plan">Action plan</a></li>
           <li><a href="#video">Video walkthrough</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#offer">The Playbook ($27)</a></li>
+<!-- @/SLOT:FOOTER_TOOL_LINKS -->
         </ul>
       </div>
       <div>
@@ -707,13 +769,16 @@
       </div>
     </div>
     <div class="foot-base">
-      <div>&copy; 2026 DPA Estimator — a home-affordability tool. Not a lender.</div>
+      <!-- @SLOT:FOOTER_BASE -->
+<div>&copy; 2026 DPA Estimator — a home-affordability tool. Not a lender.</div>
       <div>Estimates use FHA 31/43 DTI guidelines · verify programs with your state agency</div>
+<!-- @/SLOT:FOOTER_BASE -->
     </div>
   </div>
 </footer>
 
 <!-- Hidden print-only PDF report -->
+<!-- @SLOT:PRINT_REPORT -->
 <div id="printReport">
   <h1>Your Home Affordability &amp; Down Payment Assistance Report</h1>
   <div id="prDate" style="color:#666; font-size:11px;"></div>
@@ -723,9 +788,11 @@
   <h2>Your action plan</h2><ol id="prPlan"></ol>
   <div class="fine">Educational estimate only — not a loan offer, pre-approval, or eligibility determination. Program terms are set solely by each state housing finance agency. Generated by DPA Estimator. Methodology: FHA 31/43 DTI guidelines, 30-yr amortization, 1.1% tax / 0.35% insurance national averages.</div>
 </div>
+<!-- @/SLOT:PRINT_REPORT -->
 
 <script>
 // ================= CONFIG — the ONLY block to edit when wiring the site live =================
+/* @SLOT:CONFIG_JS */
 const CONFIG = {
   // MailerLite embedded-form subscribe endpoint (account 2499190, form "DPA Calculator — Report + Fee-Buster Capture").
   // Subscribers land in the "DPA Calculator Leads" group → 7-day nurture automation.
@@ -737,6 +804,7 @@ const CONFIG = {
   ga4Id: "G-RJ5SHMEZWN",      // GA4 stream shared with V1 for one-property A/B.
   siteVariant: "v4-flagship"  // A/B marker — stamped on every GA4 event so V4 is segmentable vs V1.
 };
+/* @/SLOT:CONFIG_JS */
 
 // --- GA4 loader + event helper (safe no-op until CONFIG.ga4Id is set) ---
 if (CONFIG.ga4Id) {
@@ -750,6 +818,7 @@ if (CONFIG.ga4Id) {
 const track = (name, params) => { if (window.gtag) gtag('event', name, Object.assign({ site_variant: CONFIG.siteVariant }, params || {})); };
 // =============================================================================================
 
+/* @SLOT:ENGINE_JS */
 // STATE_PROGRAMS — verified starter dataset (11 states), each source checked against the
 // official state housing finance agency site (July 2026). Expand only with verified sources.
 const STATE_PROGRAMS = {
@@ -989,6 +1058,7 @@ $('pdfBtn').addEventListener('click', () => {
   $('prPlan').innerHTML = L.plan.map(x => `<li>${x.replace(/<a [^>]+>|<\/a>/g,'')}</li>`).join('');
   window.print();
 });
+/* @/SLOT:ENGINE_JS */
 
 // --- Lead capture: posts to CONFIG.espEndpoint when set; graceful stub otherwise ---
 $('captureForm').addEventListener('submit', function(e) {
