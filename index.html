@@ -116,7 +116,8 @@
     --shadow-dk:0 2px 8px rgba(0,0,0,.25), 0 30px 70px -25px rgba(0,0,0,.55);
   }
   *{ box-sizing:border-box; }
-  html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+  html{ scroll-behavior:smooth; scroll-padding-top:76px; -webkit-text-size-adjust:100%; }
+  [id]{ scroll-margin-top:76px; } /* fixed glass nav must never cover an anchored heading */
   body{ margin:0; background:var(--cloud); color:var(--ink); font-family:var(--sans); line-height:1.55; font-size:16px; -webkit-font-smoothing:antialiased; }
   img,iframe,video{ max-width:100%; }
   a{ color:var(--navy); text-underline-offset:2px; }
