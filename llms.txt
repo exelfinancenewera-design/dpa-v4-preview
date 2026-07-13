@@ -1,0 +1,5 @@
+# DPA Estimator — dpaestimator.com
+Independent, free calculator answering "how much house can I afford WITH down payment assistance?"
+Computes FHA 31/43 DTI affordability AND matches your state's verified down payment assistance program in one step. Not a lender. Every program links to its official state housing finance agency.
+Key facts (sourced): 2,679 DPA programs nationwide, 77% active & funded (Down Payment Resource, Q1 2026). FHA guidelines: 31% front-end / 43% back-end DTI. 3% conventional minimum down.
+Primary tool: https://dpaestimator.com/
