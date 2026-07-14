@@ -23,6 +23,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Google AdSense (site verification + serving). White-label: swap ca-pub id per account. -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3151473770988665" crossorigin="anonymous"></script>
 
 <!-- @SLOT:JSONLD -->
 <script type="application/ld+json">
@@ -802,7 +804,8 @@ const CONFIG = {
   affiliateUrl: "",           // TODO: lender-comparison affiliate URL. Empty = hides link.
   videoEmbedUrl: "walkthrough-video-ui.mp4", // NotebookLM UI walkthrough (deployed alongside this file).
   ga4Id: "G-RJ5SHMEZWN",      // GA4 stream shared with V1 for one-property A/B.
-  siteVariant: "v4-flagship"  // A/B marker — stamped on every GA4 event so V4 is segmentable vs V1.
+  siteVariant: "v4-flagship", // A/B marker — stamped on every GA4 event so V4 is segmentable vs V1.
+  adsenseId: "ca-pub-3151473770988665" // AdSense publisher (loader is hard-set in <head>; slot IDs go on the 3 .ad units once ad units are created & approved).
 };
 /* @/SLOT:CONFIG_JS */
 
