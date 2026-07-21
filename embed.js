@@ -62,6 +62,7 @@
   }
 
   // --- markup + scoped styles ---
+  var PRESET=(function(){var el=document.getElementById("dpa-affordability-widget");var v=el&&el.getAttribute("data-state");return (v&&DATA[v])?v:"CA";})();
   var opts = Object.keys(STATE_PROGRAMS)
     .map(function (c) { return '<option value="' + c + '">' + STATE_PROGRAMS[c].name + "</option>"; })
     .join("");
@@ -101,7 +102,7 @@
   '<div class="bd">' +
   '<div class="row"><div><label>Annual income</label><input id="e-inc" type="number" inputmode="numeric" value="85000" min="0" step="1000"></div>' +
   '<div><label>Monthly debts</label><input id="e-debt" type="number" inputmode="numeric" value="350" min="0" step="10"></div></div>' +
-  '<label>State</label><select id="e-state">' + opts + "</select>" +
+  '<label>State</label><select id="e-state">' + opts.replace('value="'+PRESET+'"', 'value="'+PRESET+'" selected') + "</select>" +
   '<label>Mortgage rate</label><div class="rate"><input id="e-rate" type="range" min="4" max="9" step="0.125" value="6.5"><output id="e-rout">6.5%</output></div>' +
   '<button id="e-go" type="button">See what I can afford →</button>' +
   '<div class="out" id="e-out">' +
